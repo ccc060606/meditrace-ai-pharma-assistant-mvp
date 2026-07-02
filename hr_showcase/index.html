@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI医药业务日报与月报助手｜陈杰涵</title>
+  <meta name="description" content="基于医药业务真实工作痛点设计的AI日报、客户管理、月报与医学文献追踪MVP。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">陈杰涵 · AI应用作品</a>
+    <nav aria-label="页面导航">
+      <a href="#problem">业务问题</a>
+      <a href="#solution">产品方案</a>
+      <a href="#evidence">成果证据</a>
+      <a href="#boundary">项目边界</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI APPLICATION · PHARMA OPERATIONS</p>
+        <h1>AI医药业务日报与月报助手</h1>
+        <p class="hero-summary">把分散日报转成可检索的结构化数据，连接客户沟通记录、月度统计和公开医学文献追踪。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#evidence">查看实际页面</a>
+          <a class="button secondary" href="http://127.0.0.1:8502" target="_blank" rel="noopener">打开本机MVP</a>
+        </div>
+        <p class="scope-note">个人场景复盘项目 · 使用虚构演示数据 · 非信达生物官方项目</p>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/04-monthly.png" alt="AI医药业务助手月报数据看板">
+      </figure>
+    </section>
+
+    <section class="metrics" aria-label="项目指标">
+      <div><strong>30</strong><span>条模拟日报</span></div>
+      <div><strong>8</strong><span>名匿名客户</span></div>
+      <div><strong>2</strong><span>种月报导出格式</span></div>
+      <div><strong>68</strong><span>项自动化测试通过</span></div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-heading">
+        <p class="eyebrow">01 · PROBLEM</p>
+        <h2>问题来自每天真实发生的重复劳动</h2>
+      </div>
+      <div class="problem-grid">
+        <article>
+          <span>日报分散</span>
+          <h3>月底需要逐条翻找</h3>
+          <p>日常记录以自然语言保存，缺少统一字段和检索入口，月度汇报时需要重新整理。</p>
+        </article>
+        <article>
+          <span>客户记录割裂</span>
+          <h3>历史沟通难以追踪</h3>
+          <p>同一客户的信息分散在多份日报中，重复客户、关注主题和待跟进事项难以合并。</p>
+        </article>
+        <article>
+          <span>医学问题另起流程</span>
+          <h3>文献检索不能沉淀</h3>
+          <p>客户提出的医学问题需要单独搜索公开文献，检索式、PMID和摘要缺少统一归档。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section solution-band" id="solution">
+      <div class="section-heading">
+        <p class="eyebrow">02 · SOLUTION</p>
+        <h2>从日报输入到月报导出的完整闭环</h2>
+      </div>
+      <ol class="workflow">
+        <li><b>01</b><span>粘贴或上传原始日报</span></li>
+        <li><b>02</b><span>提取日期、科室、主题和任务</span></li>
+        <li><b>03</b><span>归并匿名客户与沟通历史</span></li>
+        <li><b>04</b><span>统计月度指标和任务状态</span></li>
+        <li><b>05</b><span>导出Excel/Word并追踪文献</span></li>
+      </ol>
+      <div class="tech-line">
+        <span>Streamlit</span><span>Python</span><span>SQLite</span><span>SQLAlchemy</span><span>Plotly</span><span>PubMed API</span>
+      </div>
+    </section>
+
+    <section class="section" id="evidence">
+      <div class="section-heading">
+        <p class="eyebrow">03 · EVIDENCE</p>
+        <h2>HR可以直接核验的产品页面</h2>
+        <p>展示数据全部为虚构内容，不包含真实医生、患者或企业内部资料。</p>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-copy">
+          <p class="feature-index">A</p>
+          <h3>日报结构化</h3>
+          <p>支持自然语言、文件上传和手工录入，将日报整理为日期、客户编号、科室、沟通主题、反馈与后续任务。</p>
+        </div>
+        <figure><img src="assets/02-daily.png" alt="日报录入与结构化页面"></figure>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-copy">
+          <p class="feature-index">B</p>
+          <h3>匿名客户管理</h3>
+          <p>用C001等编号代替真实身份，展示客户历史时间线，并提供疑似重复客户检测与合并记录。</p>
+        </div>
+        <figure><img src="assets/03-customers.png" alt="匿名客户管理页面"></figure>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-copy">
+          <p class="feature-index">C</p>
+          <h3>月报统计与导出</h3>
+          <p>自动计算拜访量、覆盖客户、活动数量和待处理任务，并将科室分布、任务状态导出为Excel或Word。</p>
+        </div>
+        <figure><img src="assets/04-monthly.png" alt="月报统计和图表页面"></figure>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-copy">
+          <p class="feature-index">D</p>
+          <h3>公开医学文献追踪</h3>
+          <p>根据医学问题生成检索式，通过PubMed E-utilities获取标题、摘要、研究类型、PMID和DOI，并保留来源供人工核验。</p>
+        </div>
+        <figure><img src="assets/05-literature.png" alt="PubMed医学文献追踪页面"></figure>
+      </div>
+    </section>
+
+    <section class="section result-band">
+      <div class="section-heading">
+        <p class="eyebrow">04 · OUTCOME</p>
+        <h2>这个项目证明了什么</h2>
+      </div>
+      <div class="outcomes">
+        <div><b>需求理解</b><p>从自身实习中的日报和月报痛点定义MVP范围。</p></div>
+        <div><b>产品闭环</b><p>覆盖录入、整理、查询、统计、导出和文献追踪。</p></div>
+        <div><b>数据意识</b><p>采用匿名编号、敏感信息检测和结构化数据模型。</p></div>
+        <div><b>交付能力</b><p>应用可运行、报告可导出、核心逻辑有自动化测试。</p></div>
+      </div>
+    </section>
+
+    <section class="section boundary" id="boundary">
+      <div class="section-heading">
+        <p class="eyebrow">05 · BOUNDARY</p>
+        <h2>主动说明边界，比过度包装更可信</h2>
+      </div>
+      <ul>
+        <li>当前默认使用Mock模型演示，不宣称已在信达生物内部部署。</li>
+        <li>数据库中的8名客户和30条日报均为虚构数据。</li>
+        <li>AI摘要和公开文献检索仅用于信息整理，不构成医学建议。</li>
+        <li>公开演示不配置真实API Key，避免数据外传和费用风险。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <strong>陈杰涵</strong>
+    <span>AI产品助理 · AI应用运营 · 2026届本科</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+from src.repositories.daily_report_repo import DailyReportRepository
+from src.repositories.customer_repo import CustomerRepository
+from src.repositories.literature_repo import LiteratureRepository

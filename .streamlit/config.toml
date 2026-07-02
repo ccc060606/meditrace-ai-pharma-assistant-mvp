@@ -1,0 +1,19 @@
+[server]
+# 监听所有网络接口，允许局域网其他设备访问
+address = "0.0.0.0"
+port = 8501
+# 关闭 CORS 限制，允许跨域访问
+enableCORS = true
+enableXsrfProtection = true
+# 无头模式（不自动打开浏览器）
+headless = true
+# 文件上传大小限制
+maxUploadSize = 50
+
+[browser]
+# 自动收集使用统计关闭
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1a73e8"
